@@ -22,7 +22,7 @@ network:
 tools:
   github:
     toolsets: [default]
-  bash:
+  bash: true
 
 safe-outputs:
   push-to-pull-request-branch:
