@@ -4,7 +4,7 @@ description: Analyzes pull requests for changes that require documentation updat
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, reopened, synchronize]
   roles: [admin]
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
   issues: read
   pull-requests: read
 
-engine: claude
+engine: copilot
 
 network:
   allowed:

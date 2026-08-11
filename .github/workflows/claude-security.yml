@@ -49,6 +49,6 @@ jobs:
             No propongas cambios cosméticos ni de estilo salvo que afecten la seguridad.
             Usa `gh pr comment` para publicar un comentario final en la PR.
           claude_args: |
-            --max-turns 10
+            --max-turns 20
             --allowedTools "Read,Grep,Glob,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*)"
             --append-system-prompt "Actua como auditor de seguridad de aplicaciones y CI/CD. No ejecutes código de la PR. Revisa solo el diff y el contexto necesario. Prioriza bugs de seguridad reales y accionables. No propongas cambios cosméticos ni de estilo salvo que afecten la seguridad. Responde en español, de forma concisa. Si no encuentras riesgos claros, dilo explicitamente y menciona cualquier zona que no hayas podido verificar."
