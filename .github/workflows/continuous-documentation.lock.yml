@@ -23,13 +23,14 @@
 #
 # Analyzes pull requests for changes that require documentation updates and automatically updates the README.md file in the PR branch.
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"642a45b444167680e227328d83e35685d4a76f8b7d6fd03f6e004c369ec75332","compiler_version":"v0.50.5"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"fb08ee72eead2ca75e330efde21069ac6a7c788e7a1b6b5e8f6d63afe168d8dd","compiler_version":"v0.50.5"}
 
 name: "📚 Continuous Docs"
 "on":
   pull_request:
     types:
     - opened
+    - reopened
     - synchronize
   # roles: # Roles processed as role check in pre-activation job
   # - admin # Roles processed as role check in pre-activation job
