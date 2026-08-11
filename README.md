@@ -58,6 +58,32 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## API Endpoints
+
+### Health Check
+
+```
+GET /health
+```
+
+Returns the current service health status.
+
+**Response**
+
+```json
+{
+  "status": "ok",
+  "uptime": 42,
+  "timestamp": "2026-08-11T18:32:52.492Z"
+}
+```
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `status` | `string` | Always `"ok"` when the service is running |
+| `uptime` | `number` | Process uptime in seconds |
+| `timestamp` | `string` | Current date and time in ISO 8601 format |
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
